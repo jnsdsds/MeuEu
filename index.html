@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="html">
+<!-- Para alterar as configurações css em massa / componente do botão de troca de cores -->
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Aplicação das fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Aplicação das fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Aplicação das fontes do Google -->
+    <meta charset="UTF-8">
+    <!-- Codificação do teclado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuração visual para dispositivos móveis -->
+    <title>Sobre Jonas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link com o arquivo CSS -->
+</head>
+
+<body>
+    <div id="container">
+        
+        <!-- Container dos elementos: profile, redes -->
+        <div id="profile">
+            <img id="foto" src="./assets/avatar.png" alt="foto de perfil em elipse">
+            <div id="switch">
+                <button onclick="btnon()"></button><span></span>
+            </div>
+            
+        </div>
+        <p>@NomedeUsuario</p>
+        <div id="redes">
+            <a href="#" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </div>
+        <ul id="menu">
+            
+            <li>
+                <a href="#" onclick="itens()">Portifólio</a>
+                
+            </li>
+            <ul id="mostraritens" class="itens-ocultos btn-hide">
+                <li>
+                    <a ref="#" class="opcao-portifolio" >Financeiro</a>
+                </li>
+                <li>
+                    <a ref="#" class="opcao-portifolio">Análise pré jogo</a>
+                </li>
+
+            </ul>
+
+
+            
+            <li>
+                <a href="#">Curriculo</a>
+            </li>
+
+        </ul>
+        
+        <footer id="footer">
+            <p> </p>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <!-- Para adicionar os ícones -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Para adicionar os ícones -->
+    <script src="./js.js"></script>
+</body>
+
+</html>

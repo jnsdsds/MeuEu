@@ -1,0 +1,265 @@
+/* Definição das variáveis:root */
+:root {
+    --bg: linear-gradient(260deg, black , rgb(73, 70, 70));
+    --text-color: white;
+    --button-border-color: 1px solid rgba(255, 255, 255, 0.5);
+    --button-color: rgba(255, 255, 255, 0.05);
+    --botton-color-hover: 1px solid rgba(0, 0, 0, 0.2);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./assets/sun.svg);
+    --bg-op: rgba(255, 255, 255, 0.788);
+    --cor-op: rgb(0, 0, 0);
+    --cor-sombra: 7px 3px 7px 2px rgba(245, 245, 245, 0.486);
+    
+    
+}
+
+/* Definição das variáveis: light */
+.light {
+    --bg: linear-gradient(130deg, rgba(252, 249, 249, 0.87) , rgba(168, 168, 168, 0.877));
+    --text-color: black;
+    --button-border-color: 1px solid rgba(0, 0, 0, 0.5);
+    --button-color: rgba(0, 0, 0, 0.05);
+    --button-color-hover:  rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.2);
+    --switch-bg-url: url(./assets/moon-stars.svg);
+    --cor-sombra: 7px 3px 7px 2px rgba(0, 0, 0, 0.479);
+   
+}
+/* Configurações gerais para o corpo do documento */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: var(--bg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    animation-name: mudacor;
+    animation-duration: 5s;
+    
+}
+/*estilo da foto de perfil */
+
+/* Estilo do botão */
+#switch {
+   position: relative; }
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) center no-repeat;
+    border-radius: 50%;
+    border: 0;
+    position: absolute;
+    top: 15%;
+    transform: translatey(-50%);
+    left: 0; 
+    animation: slide-out 0.2s;   
+}
+.light #switch button {
+    left: initial;
+    right: 0;
+    animation: slide-in 0.2s;
+    
+ }
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+ }
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--button-color);
+    border: var(--button-border-color);
+    border-radius: 9999px;
+      
+}
+p {
+    display: block; 
+    text-align: justify;
+    margin: 0;
+    color: var(--text-color);
+   
+}
+#mostraritens {
+    padding: 1px 10px 10px;
+    gap: 2px;
+
+}
+
+/* Estilos para o container principal */
+
+#container {
+    padding: 15px 50px 25px 50px;
+    max-width: 360px;
+    margin: 25px auto;
+    text-align: center;
+    border: solid 1px rgba(0, 0, 0, 0.096);
+    border-radius: 15px;
+    
+    box-shadow: var(--cor-sombra);
+
+}
+
+/* Estilos para a seção do perfil */
+#profile {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 24px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(1, 34, 66, 0.87);
+    border-radius: 125px 5px 5px 125px;
+}
+
+#profile img {
+  width: 100px;
+    
+}
+
+/* Estilos para a lista de links */
+ul {
+    align-items: center;
+    list-style: none;
+    display: block;
+    padding: 10px 10px;
+    
+}
+
+ul li a {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    align-items: center;
+    background: var(--button-color);
+    border: var(--button-border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+
+ul li a:hover {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    align-items: center;
+    background: var(--button-color-hover);
+    border-radius: 8px;
+    
+}
+
+#menu {
+    
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+#mostraritens .itens-ocultos {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding: 0px 17px;
+    display: flex;
+    
+}
+#mostraritens .itens-ocultos li {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding: 0px 17px;
+    display: flex;
+    text-align: left;
+    
+}
+.itens-ocultos a {
+    margin: 1px;
+    text-align: left;
+    height: 24px;
+    display: list-item;
+    padding: 0 0 0 15px;
+    background: rgb(255, 163, 127);
+}
+.itens-ocultos a:hover {
+    margin: 1px;
+    text-align: left;
+    height: 36px;
+    display: list-item;
+    padding: 0 0 0 15px;
+    background-color: aliceblue;
+}
+.btn-hide {
+    display: none;
+
+}
+.itens-ocultos a {
+    background: var(--bg-op);
+    color: var(--cor-op);
+}
+
+/* Estilos para os links com ícones */
+#redes {
+    display: flex;
+    justify-content: center;
+    padding: 04px 0;
+    font-size: 24px;
+}
+
+#redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    color: var(--text-color);
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+#redes a:hover {
+    background: var(--highlight-color);
+    border-radius: 50%;
+    box-shadow: 50px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    padding: 24px 0;
+    margin: 0;
+    text-align: center;
+    
+    
+    animation-name: muda-cor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Media Queries */
+
+
+/* animações */
+
+@keyframes slide-in {
+    from {left: 0;}
+    to {left: 50%;}
+}
+@keyframes slide-out {
+    from {left: 50%;}
+    to {left: 0;}
+}
+/* @keyframes muda-cor {
+    from {background-color: rgba(255, 251, 251, 0.89); border-radius: 100px;}
+    to {background-color: rgba(173, 37, 173, 0);border-radius: 15px;padding: 0;}
+} */

@@ -1,0 +1,29 @@
+
+
+1 - Criar a página HTML
+    1.1 Head 
+       <Link Inserir quais serão as fontes que será utilizadas no projeto>
+       <Link Inserir quais serão os arquivos CSS e JS que darão a dinamica da página>
+       <meta viewport>
+       <meta charset>
+       <title>
+    1.2 <body> É onde constam todos os elementos da página.
+        1.2.1 <header> Cabeçalhos
+        1.2.2 <section> Seção
+        1.2.3 <article> Artigo
+        1.2.4 <nav>  navegação
+        1.2.5 <aside> Complementar ao nav
+        1.2.6 <main> Conteúdo principal
+        1.2.7 <figure> Imagens
+        1.2.8 <footer> Rodapé
+    1.3 
+        <a>
+        <em>
+        <strong>
+        <cite>
+        <q>
+        <time>
+2 - CSS 
+    2.1 :root {
+        no root, que são as definições raizes 
+    }
