@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br" id="html">
-<!-- Para alterar as configurações css em massa / componente do botão de troca de cores -->
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,18 +18,15 @@
 </head>
 
 <body>
-    <div id="container">
-        
-        <!-- Container dos elementos: profile, redes -->
+    <div id="container"> <!-- Container do perfil-->
         <div id="profile">
-            <img id="foto" src="./assets/avatar.png" alt="foto de perfil em elipse">
+                <img id="foto" src="./assets/avatar.png" alt="foto de perfil em elipse">
             <div id="switch">
                 <button onclick="btnon()"></button><span></span>
             </div>
-            
         </div>
-        <p>@NomedeUsuario</p>
-        <div id="redes">
+            <p>@NomedeUsuario</p>
+        <div id="redes"> <!-- links para as redes sociais-->
             <a href="#" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
             </a>
@@ -47,15 +43,15 @@
                 <ion-icon name="logo-youtube"></ion-icon>
             </a>
         </div>
-        <ul id="menu">
-            
+        <ul id="menu"> <!-- Menu e submenu-->
+
             <li>
                 <a href="#" onclick="itens()">Portifólio</a>
-                
+
             </li>
             <ul id="mostraritens" class="itens-ocultos btn-hide">
                 <li>
-                    <a ref="#" class="opcao-portifolio" >Financeiro</a>
+                    <a ref="#" class="opcao-portifolio">Financeiro</a>
                 </li>
                 <li>
                     <a ref="#" class="opcao-portifolio">Análise pré jogo</a>
@@ -64,15 +60,15 @@
             </ul>
 
 
-            
+
             <li>
                 <a href="#">Curriculo</a>
             </li>
 
         </ul>
-        
+
         <footer id="footer">
-            <p> </p>
+            <p> Desenvolvido por Jonas dos Santos</p>
         </footer>
     </div>
 
